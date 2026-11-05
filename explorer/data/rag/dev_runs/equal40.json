@@ -1,0 +1,49 @@
+{
+ "config": "equal40",
+ "settings": {
+  "label": {
+   "ko": "실험: 동일 가중 RRF 40/40 (프롬프트)",
+   "en": "Experiment: equal-weight RRF 40/40 (prompt)"
+  },
+  "vector_weight": 0.5,
+  "bm25_k": 40,
+  "vector_k": 40,
+  "rrf_k": 60,
+  "final_k": 8,
+  "per_ref_cap": 2,
+  "validated": false
+ },
+ "split": "dev",
+ "summary": {
+  "all": {
+   "n": 64,
+   "recall": 0.8794270833333334,
+   "hit": 0.9375,
+   "mrr": 0.7577008928571429,
+   "page": 0.76
+  },
+  "en": {
+   "n": 32,
+   "recall": 0.9322916666666667,
+   "hit": 0.96875,
+   "mrr": 0.8362351190476189,
+   "page": 0.76
+  },
+  "ko": {
+   "n": 32,
+   "recall": 0.8265625,
+   "hit": 0.90625,
+   "mrr": 0.6791666666666666,
+   "page": 0.76
+  },
+  "dev": {
+   "n": 64,
+   "recall": 0.8794270833333334,
+   "hit": 0.9375,
+   "mrr": 0.7577008928571429,
+   "page": 0.76
+  }
+ },
+ "ran_at": "2026-11-03T14:02:50+00:00",
+ "scorer": "eval_retrieval_dev.mjs (공식 채점 복사본) + lookup_retrieve.js"
+}

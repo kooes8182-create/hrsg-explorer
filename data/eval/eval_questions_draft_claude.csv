@@ -1,0 +1,51 @@
+﻿qid,split,lang,question,answerable,gold_doc_ids,evidence_pages,note
+C01-ko,dev,ko,유리 용해로 배기가스에 쓰는 판형 핀 열교환기의 가스측 오염 세정 방법은 어떻게 시험됐나요?,Y,marner1983_nasa,marner1983_nasa:118,Claude 작성 초안(사용자 미검토). 원 문단 marner1983_nasa:p118:06
+C01-en,dev,en,How was cleaning of plate-fin heat exchangers exposed to glass furnace exhaust investigated?,Y,marner1983_nasa,marner1983_nasa:118,Claude 작성 초안(사용자 미검토). 원 문단 marner1983_nasa:p118:06
+C02-ko,dev,ko,가스터빈 기동 시 드럼 수위가 갑자기 올라가는 스웰링 현상에 어떻게 대응하나요?,Y,CFKO201133254120910,CFKO201133254120910:2,Claude 작성 초안(사용자 미검토). 원 문단 CFKO201133254120910:p002:03
+C02-en,dev,en,How is drum level swell during gas turbine startup handled by the HRSG level control?,Y,CFKO201133254120910,CFKO201133254120910:2,Claude 작성 초안(사용자 미검토). 원 문단 CFKO201133254120910:p002:03
+C03-ko,test,ko,복합화력에서 배열회수보일러가 가스 사이클과 증기 사이클 사이에서 하는 역할은 무엇인가요?,Y,JPCS2019_pinch,JPCS2019_pinch:3,Claude 작성 초안(사용자 미검토). 원 문단 JPCS2019_pinch:p003:01
+C03-en,test,en,What role does the HRSG play as the link between the gas turbine cycle and the steam cycle?,Y,JPCS2019_pinch,JPCS2019_pinch:3,Claude 작성 초안(사용자 미검토). 원 문단 JPCS2019_pinch:p003:01
+C04-ko,dev,ko,후연소 버너 내부 유동에 대한 이동식 농축기의 영향은 어떻게 측정했나요?,Y,CET2013_034_007,CET2013_034_007:2,Claude 작성 초안(사용자 미검토). 원 문단 CET2013_034_007:p002:03
+C04-en,dev,en,How were measurements made of the effect of a movable concentrator on afterburner flow?,Y,CET2013_034_007,CET2013_034_007:2,Claude 작성 초안(사용자 미검토). 원 문단 CET2013_034_007:p002:03
+C05-ko,dev,ko,HRSG 고압 증발관에서 일어나는 침착물 하부 부식 세 가지는 무엇인가요?,Y,IAPWS-TGD7-16,IAPWS-TGD7-16:7,Claude 작성 초안(사용자 미검토). 원 문단 IAPWS-TGD7-16:p007:01
+C05-en,dev,en,Which corrosion mechanisms under deposits occur in HRSG high-pressure evaporator tubes?,Y,IAPWS-TGD7-16,IAPWS-TGD7-16:7,Claude 작성 초안(사용자 미검토). 원 문단 IAPWS-TGD7-16:p007:01
+C06-ko,test,ko,DECARBit 모델과 CAESAR 모델의 효율 계산 차이는 어디에서 생기나요?,Y,EBTF_D1.4.3_2011,EBTF_D1.4.3_2011:53,Claude 작성 초안(사용자 미검토). 원 문단 EBTF_D1.4.3_2011:p053:01
+C06-en,test,en,Why do the DECARBit and CAESAR models give slightly different plant efficiencies?,Y,EBTF_D1.4.3_2011,EBTF_D1.4.3_2011:53,Claude 작성 초안(사용자 미검토). 원 문단 EBTF_D1.4.3_2011:p053:01
+C07-ko,dev,ko,연소기 열손실을 무시하고 단열 연소로 가정하면 화염 온도가 어떻게 달라지나요?,Y,IJES2023_Hamitabat,IJES2023_Hamitabat:17,Claude 작성 초안(사용자 미검토). 원 문단 IJES2023_Hamitabat:p017:06
+C07-en,dev,en,What happens to the flame temperature when the Hamitabat plant combustor is treated as adiabatic?,Y,IJES2023_Hamitabat,IJES2023_Hamitabat:17,Claude 작성 초안(사용자 미검토). 원 문단 IJES2023_Hamitabat:p017:06
+C08-ko,dev,ko,외기 온도가 복합화력 기저부하와 최소 허용 부하에 어떤 영향을 주나요?,Y,JPCS2017_891,JPCS2017_891:4,Claude 작성 초안(사용자 미검토). 원 문단 JPCS2017_891:p004:01
+C08-en,dev,en,How does ambient air temperature affect the base load and minimum allowable load of a CCGT unit?,Y,JPCS2017_891,JPCS2017_891:4,Claude 작성 초안(사용자 미검토). 원 문단 JPCS2017_891:p004:01
+C09-ko,test,ko,히트펌프 성적계수(COP)는 어떻게 정의되고 어떤 종류의 히트펌프가 있나요?,Y,JAKO200910348030935,JAKO200910348030935:5,Claude 작성 초안(사용자 미검토). 원 문단 JAKO200910348030935:p005:05
+C09-en,test,en,"How is a heat pump's coefficient of performance defined, and what kinds of heat pumps are there?",Y,JAKO200910348030935,JAKO200910348030935:5,Claude 작성 초안(사용자 미검토). 원 문단 JAKO200910348030935:p005:05
+C10-ko,dev,ko,증발기의 총괄 열전달계수를 높이도록 최적화하면 전열면적과 비용이 어떻게 변하나요?,Y,dnb_1156187052,dnb_1156187052:114,Claude 작성 초안(사용자 미검토). 원 문단 dnb_1156187052:p114:01
+C10-en,dev,en,What happens to evaporator surface area and cost when optimization raises its overall heat transfer coefficient?,Y,dnb_1156187052,dnb_1156187052:114,Claude 작성 초안(사용자 미검토). 원 문단 dnb_1156187052:p114:01
+C11-ko,dev,ko,IF97에서 포화선을 따라 기본 방정식들 사이의 불일치는 어느 정도인가요?,Y,IAPWS-IF97-Rev2007,IAPWS-IF97-Rev2007:42,Claude 작성 초안(사용자 미검토). 원 문단 IAPWS-IF97-Rev2007:p042:04
+C11-en,dev,en,How large are the inconsistencies between the IF97 equations along the saturation line?,Y,IAPWS-IF97-Rev2007,IAPWS-IF97-Rev2007:42,Claude 작성 초안(사용자 미검토). 원 문단 IAPWS-IF97-Rev2007:p042:04
+C12-ko,test,ko,V94.2 가스터빈 발전소 HRSG 압력강하 해석에서 입구 질량유량과 유입 면적은 어떻게 설정했나요?,Y,Karimkashi2012_AFMC,Karimkashi2012_AFMC:2,Claude 작성 초안(사용자 미검토). 원 문단 Karimkashi2012_AFMC:p002:06
+C12-en,test,en,"In the V94.2 plant case study, how were the HRSG inlet mass flow and inflow area set up?",Y,Karimkashi2012_AFMC,Karimkashi2012_AFMC:2,Claude 작성 초안(사용자 미검토). 원 문단 Karimkashi2012_AFMC:p002:06
+C13-ko,dev,ko,덕트 버너에 공급하는 연료량을 제한하는 이유는 무엇인가요?,Y,Maghsoudi2017_TSCI,Maghsoudi2017_TSCI:4,Claude 작성 초안(사용자 미검토). 원 문단 Maghsoudi2017_TSCI:p004:04
+C13-en,dev,en,Why is the fuel supplied to the duct burner limited in the repowering model?,Y,Maghsoudi2017_TSCI,Maghsoudi2017_TSCI:4,Claude 작성 초안(사용자 미검토). 원 문단 Maghsoudi2017_TSCI:p004:04
+C14-ko,dev,ko,NETL 기준 보고서에서는 어떤 발전소 구성을 분석했나요?,Y,NETL-Baseline-Vol1-2025,NETL-Baseline-Vol1-2025:26,Claude 작성 초안(사용자 미검토). 원 문단 NETL-Baseline-Vol1-2025:p026:04
+C14-en,dev,en,Which plant configurations were analyzed in the NETL fossil energy baseline report?,Y,NETL-Baseline-Vol1-2025,NETL-Baseline-Vol1-2025:26,Claude 작성 초안(사용자 미검토). 원 문단 NETL-Baseline-Vol1-2025:p026:04
+C15-ko,test,ko,GE 복합화력 성능표의 기준 현장 조건과 증기 사이클 구성은 무엇인가요?,Y,GE-GER-3574G,GE-GER-3574G:14,Claude 작성 초안(사용자 미검토). 원 문단 GE-GER-3574G:p014:04
+C15-en,test,en,What site conditions and steam cycle arrangements underlie GE's combined-cycle performance ratings?,Y,GE-GER-3574G,GE-GER-3574G:14,Claude 작성 초안(사용자 미검토). 원 문단 GE-GER-3574G:p014:04
+C16-ko,dev,ko,가스터빈 에너지·엑서지 해석에서 어떤 가정을 두었나요?,Y,Almutairi-2015-Energies,Almutairi-2015-Energies:3,Claude 작성 초안(사용자 미검토). 원 문단 Almutairi-2015-Energies:p003:02
+C16-en,dev,en,What assumptions were made for the gas turbine model in the energy and exergy analysis?,Y,Almutairi-2015-Energies,Almutairi-2015-Energies:3,Claude 작성 초안(사용자 미검토). 원 문단 Almutairi-2015-Energies:p003:02
+C17-ko,dev,ko,관 내부 열전달계수 계산에 어떤 상관식을 비교했나요?,Y,AUT2016_thesis,AUT2016_thesis:66,Claude 작성 초안(사용자 미검토). 원 문단 AUT2016_thesis:p066:01
+C17-en,dev,en,Which correlations were compared for computing the tube-side heat transfer coefficient?,Y,AUT2016_thesis,AUT2016_thesis:66,Claude 작성 초안(사용자 미검토). 원 문단 AUT2016_thesis:p066:01
+C18-ko,test,ko,삼중압 재열 복합화력에서 고압 증기는 과열기와 재열기를 어떻게 거치나요?,Y,Ibrahim2013_TSCI,Ibrahim2013_TSCI:4,Claude 작성 초안(사용자 미검토). 원 문단 Ibrahim2013_TSCI:p004:01
+C18-en,test,en,"In a triple-pressure reheat combined cycle, what path does HP steam take through the superheater and reheater?",Y,Ibrahim2013_TSCI,Ibrahim2013_TSCI:4,Claude 작성 초안(사용자 미검토). 원 문단 Ibrahim2013_TSCI:p004:01
+C19-ko,dev,ko,열역학 제1법칙 해석만으로 부족해 엑서지 해석을 하는 이유는 무엇인가요?,Y,Ozcelik2020_MANAS,Ozcelik2020_MANAS:2,Claude 작성 초안(사용자 미검토). 원 문단 Ozcelik2020_MANAS:p002:06
+C19-en,dev,en,Why is exergy analysis preferred over first-law analysis for evaluating energy systems?,Y,Ozcelik2020_MANAS,Ozcelik2020_MANAS:2,Claude 작성 초안(사용자 미검토). 원 문단 Ozcelik2020_MANAS:p002:06
+C21-ko,dev,ko,수소·질소 연료 저장소로 어떤 지하 공동을 가정했나요?,Y,IEAGHG_2012-08,IEAGHG_2012-08:90,Claude 작성 초안(사용자 미검토). 원 문단 IEAGHG_2012-08:p090:01
+C21-en,dev,en,What kind of underground storage was assumed for the H2/N2 fuel?,Y,IEAGHG_2012-08,IEAGHG_2012-08:90,Claude 작성 초안(사용자 미검토). 원 문단 IEAGHG_2012-08:p090:01
+C22-ko,test,ko,복합화력 사이클에서 엑서지 파괴가 가장 큰 기기는 무엇이라고 보고됐나요?,Y,JPCS2025_3028,JPCS2025_3028:4,Claude 작성 초안(사용자 미검토). 원 문단 JPCS2025_3028:p004:03
+C22-en,test,en,Which component is reported as the largest source of exergy destruction in combined cycle plants?,Y,JPCS2025_3028,JPCS2025_3028:4,Claude 작성 초안(사용자 미검토). 원 문단 JPCS2025_3028:p004:03
+C23-ko,dev,ko,고압·저압 두 압력 복합화력 사례의 배열회수보일러는 어떤 열교환기들로 구성되나요?,Y,ARO2023_Koya,ARO2023_Koya:5,Claude 작성 초안(사용자 미검토). 원 문단 ARO2023_Koya:p005:07
+C23-en,dev,en,What heat exchangers make up the HRSG in the dual-pressure case simulated with DWSIM?,Y,ARO2023_Koya,ARO2023_Koya:5,Claude 작성 초안(사용자 미검토). 원 문단 ARO2023_Koya:p005:07
+C24-ko,dev,ko,가스엔진 열병합 모형 실험에서 상류 증발관의 급수량이 많게 나타난 이유는 무엇인가요?,Y,CFKO200834939674101,CFKO200834939674101:5,Claude 작성 초안(사용자 미검토). 원 문단 CFKO200834939674101:p005:03
+C24-en,dev,en,Why did upstream evaporator tubes show higher feedwater flow in the gas engine CHP model test?,Y,CFKO200834939674101,CFKO200834939674101:5,Claude 작성 초안(사용자 미검토). 원 문단 CFKO200834939674101:p005:03
+U1-ko,dev,ko,풍력발전기 블레이드 결빙을 막는 방법은 무엇인가요?,N,,,Claude 작성 초안 — 코퍼스 주제 밖 질문(답 없음으로 가정)
+U2-ko,test,ko,리튬이온 배터리 열폭주는 왜 일어나나요?,N,,,Claude 작성 초안 — 코퍼스 주제 밖 질문(답 없음으로 가정)
+U1-en,dev,en,How do solar PV inverters ride through grid frequency faults?,N,,,Claude 작성 초안 — 코퍼스 주제 밖 질문(답 없음으로 가정)
+U2-en,test,en,What was the levelized cost of offshore wind in Korea in 2024?,N,,,Claude 작성 초안 — 코퍼스 주제 밖 질문(답 없음으로 가정)

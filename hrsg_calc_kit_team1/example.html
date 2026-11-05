@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>키트 연결 예시</title>
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 760px; margin: 24px auto; padding: 0 16px; color: #1f2328; background: #fff; }
+  .note { color: #57606a; font-size: 13px; }
+  .warn { background: #fff4e5; border-radius: 6px; padding: 8px 10px; font-size: 13px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin: 12px 0; }
+  .card { border: 1px solid #d0d7de; border-radius: 8px; padding: 10px; }
+  .card b { display: block; font-size: 20px; }
+  label { display: block; margin: 6px 0; }
+  input[type=range] { width: 100%; }
+</style>
+</head>
+<body>
+<!-- 가장 작은 연결 예시 (두 팀 공통): 어댑터 → 검사 → 계산 → 카드. 화면 디자인은 각자 만든다. -->
+<p class="note">입력값을 바꾸면 바로 다시 계산됩니다. 모든 수치는 가상(DEMO) 값입니다.</p>
+<label>HRSG 차압 <b id="dpText"></b> mbar <input id="dp" type="range" min="15" max="40" step="0.5"></label>
+<label>스택 온도 <b id="stText"></b> °C <input id="st" type="range" min="75" max="120" step="0.5"></label>
+<div class="cards" id="cards"></div>
+<p class="warn" id="warn" hidden></p>
+<h3>데이터 요청 체크리스트</h3>
+<p id="chk"></p>
+<script type="module">
+  import { defaultInputs, validateInputs, calculate, formatKrw } from './calc.js';
+  import { summary } from './checklist.js';
+  const [D, C] = await Promise.all(['./data/calculator.json', './data/checklist.json'].map(async u => (await fetch(u)).json()));
+  const $ = id => document.getElementById(id), base = defaultInputs(D);
+  $('dp').value = base.equipment.hrsg_dp_mbar; $('st').value = base.equipment.stack_c;
+
+  // 어댑터: 내 화면 상태 → 키트 입력. 화면 필드 이름·단위가 다르면 여기만 고친다.
+  const toKitInputs = screen => ({ ...base, equipment: { ...base.equipment, hrsg_dp_mbar: screen.dp, stack_c: screen.stack } });
+
+  function render() {
+    const screen = { dp: $('dp').value, stack: $('st').value };   // <input> 값은 문자열이어도 된다
+    $('dpText').textContent = screen.dp; $('stText').textContent = screen.stack;
+    const inp = toKitInputs(screen), check = validateInputs(inp, D);
+    if (!check.ok) { $('cards').textContent = check.errors.join('\n'); return; }
+    if (check.warnings.length) console.warn(check.warnings);
+    const r = calculate(inp, D), best = r.methods.rows.find(m => m.id === r.methods.best_payback_id);
+    $('cards').innerHTML = [
+      ['발전 출력 손실', r.loss.total_mw.toFixed(2) + ' MW', `GT ${r.loss.gt_mw.toFixed(2)} · ST ${r.loss.st_mw.toFixed(2)}`],
+      ['월간 / 연간 손실', formatKrw(r.monthly_loss_krw), formatKrw(r.annual_loss_krw) + ' / 년'],
+      ['세정 필요도 지수', r.index.value.toFixed(1) + ' / 100', `압력 ${r.index.pressure_part.toFixed(1)} · 온도 ${r.index.temp_part.toFixed(1)}`],
+      ['회수기간 최단', best ? best.payback_months.toFixed(2) + '개월' : '산출 불가', best ? best.name + ' (추천 아님)' : ''],
+    ].map(([t, v, sub]) => `<div class="card">${t}<b>${v}</b><span class="note">${sub}</span></div>`).join('');
+    $('warn').hidden = !r.warnings.length; $('warn').textContent = r.warnings.join(' ');
+  }
+  const s = summary(C, {});
+  $('chk').textContent = `전체 진행률 ${s.all.percent}% (${s.all.done}/${s.all.total}) · 필수 ${s.required.done}/${s.required.total}`;
+  $('dp').oninput = render; $('st').oninput = render; render();
+</script>
+</body>
+</html>

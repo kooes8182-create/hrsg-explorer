@@ -1,0 +1,12 @@
+Django==6.1.1
+djangorestframework==3.18.1
+django-cors-headers==4.9.0
+psycopg2-binary==2.9.13
+python-dotenv==1.2.4
+# 논문 근거 질문(RAG): PDF 텍스트 추출, BGE-M3 임베딩, Gemini 답변
+pymupdf==2.0
+numpy==2.5.4
+torch==2.14.1
+transformers==5.21.0
+sentence-transformers==6.2.0
+google-genai==2.34.0

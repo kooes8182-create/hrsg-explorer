@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="374.4pt" viewBox="0 0 612 374.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-29T14:29:38.181184</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.4 
+L 612 374.4 
+L 612 0 
+L 0 0 
+z
+" style="fill: #fcfcfb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 57.48 309.56 
+L 601.2 309.56 
+L 601.2 33.492 
+L 57.48 33.492 
+z
+" style="fill: #fcfcfb"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 57.48 201.131482 
+L 601.2 201.131482 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke-dasharray: 7.5,6; stroke-dashoffset: 0; stroke: #6b6b6b; stroke-width: 1.5"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_2">
+      <defs>
+       <path id="m7bf94ac091" d="M 0 0 
+L 0 3.5 
+" style="stroke: #4a4a4a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m7bf94ac091" x="77.617778" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="77.617778" y="325.47" transform="rotate(-0 77.617778 325.47)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="127.962222" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="127.962222" y="325.47" transform="rotate(-0 127.962222 325.47)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="178.306667" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="178.306667" y="325.47" transform="rotate(-0 178.306667 325.47)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="228.651111" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="228.651111" y="325.47" transform="rotate(-0 228.651111 325.47)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="278.995556" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="278.995556" y="325.47" transform="rotate(-0 278.995556 325.47)">40</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="329.34" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="329.34" y="325.47" transform="rotate(-0 329.34 325.47)">50</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="379.684444" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="379.684444" y="325.47" transform="rotate(-0 379.684444 325.47)">60</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="430.028889" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="430.028889" y="325.47" transform="rotate(-0 430.028889 325.47)">70</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="480.373333" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="480.373333" y="325.47" transform="rotate(-0 480.373333 325.47)">80</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="530.717778" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="530.717778" y="325.47" transform="rotate(-0 530.717778 325.47)">90</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m7bf94ac091" x="581.062222" y="309.56" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="581.062222" y="325.47" transform="rotate(-0 581.062222 325.47)">100</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="329.34" y="341.63" transform="rotate(-0 329.34 341.63)">벡터 검색 비중 (%)  — 0% = BM25만, 100% = 벡터만 (BM25 비중 = 100% - 벡터 비중)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_13">
+      <path d="M 57.48 297.318071 
+L 601.2 297.318071 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #e4e4e2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <defs>
+       <path id="mfe30a9eaf3" d="M 0 0 
+L -3.5 0 
+" style="stroke: #4a4a4a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mfe30a9eaf3" x="57.48" y="297.318071" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: end; fill: #4a4a4a" x="50.48" y="301.773071" transform="rotate(-0 50.48 301.773071)">0.80</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_15">
+      <path d="M 57.48 237.3576 
+L 601.2 237.3576 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #e4e4e2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#mfe30a9eaf3" x="57.48" y="237.3576" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: end; fill: #4a4a4a" x="50.48" y="241.8126" transform="rotate(-0 50.48 241.8126)">0.85</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17">
+      <path d="M 57.48 177.397129 
+L 601.2 177.397129 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #e4e4e2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#mfe30a9eaf3" x="57.48" y="177.397129" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: end; fill: #4a4a4a" x="50.48" y="181.852129" transform="rotate(-0 50.48 181.852129)">0.90</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_19">
+      <path d="M 57.48 117.436659 
+L 601.2 117.436659 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #e4e4e2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#mfe30a9eaf3" x="57.48" y="117.436659" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: end; fill: #4a4a4a" x="50.48" y="121.891659" transform="rotate(-0 50.48 121.891659)">0.95</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_21">
+      <path d="M 57.48 57.476188 
+L 601.2 57.476188 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #e4e4e2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#mfe30a9eaf3" x="57.48" y="57.476188" style="fill: #4a4a4a; stroke: #4a4a4a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: end; fill: #4a4a4a" x="50.48" y="61.931188" transform="rotate(-0 50.48 61.931188)">1.00</text>
+     </g>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 10px; font-family: 'AppleGothic'; text-anchor: middle; fill: #4a4a4a" x="19.38" y="171.526" transform="rotate(-90 19.38 171.526)">영어 dev Recall@8 (0~1)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.48 309.56 
+L 57.48 33.492 
+" style="fill: none; stroke: #bdbdbb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 57.48 309.56 
+L 601.2 309.56 
+" style="fill: none; stroke: #bdbdbb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_23">
+    <path d="M 77.617778 213.623247 
+L 127.962222 213.623247 
+L 178.306667 176.147953 
+L 228.651111 138.672659 
+L 278.995556 138.672659 
+L 329.34 138.672659 
+L 379.684444 101.197365 
+L 430.028889 101.197365 
+L 480.373333 110.566188 
+L 530.717778 110.566188 
+L 581.062222 110.566188 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #2a78d6; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="mfb6626843d" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #fcfcfb; stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#p559102b21c)">
+     <use xlink:href="#mfb6626843d" x="77.617778" y="213.623247" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="127.962222" y="213.623247" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="178.306667" y="176.147953" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="228.651111" y="138.672659" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="278.995556" y="138.672659" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="329.34" y="138.672659" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="379.684444" y="101.197365" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="430.028889" y="101.197365" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="480.373333" y="110.566188" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="530.717778" y="110.566188" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mfb6626843d" x="581.062222" y="110.566188" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <g id="patch_5">
+     <path d="M 372.164167 94.372365 
+L 437.549167 94.372365 
+Q 439.799167 94.372365 439.799167 92.122365 
+L 439.799167 70.234365 
+Q 439.799167 67.984365 437.549167 67.984365 
+L 372.164167 67.984365 
+Q 369.914167 67.984365 369.914167 70.234365 
+L 369.914167 92.122365 
+Q 369.914167 94.372365 372.164167 94.372365 
+z
+" style="fill: #fcfcfb; stroke: #2a78d6; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'AppleGothic'; fill: #2b2b2b" transform="translate(380.624167 78.253365)">최고 0.964</text>
+    <text style="font-size: 9px; font-family: 'AppleGothic'; fill: #2b2b2b" transform="translate(372.164167 89.197365)">벡터 60%·70%</text>
+   </g>
+   <g id="line2d_24">
+    <path d="M 77.617778 213.623247 
+L 127.962222 213.623247 
+L 178.306667 213.623247 
+L 228.651111 138.672659 
+L 278.995556 138.672659 
+L 329.34 126.180894 
+L 379.684444 126.180894 
+L 430.028889 138.672659 
+L 480.373333 88.7056 
+L 530.717778 101.197365 
+L 581.062222 88.7056 
+" clip-path="url(#p559102b21c)" style="fill: none; stroke: #eb6834; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="m3bf279cacc" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: #fcfcfb; stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#p559102b21c)">
+     <use xlink:href="#m3bf279cacc" x="77.617778" y="213.623247" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="127.962222" y="213.623247" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="178.306667" y="213.623247" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="228.651111" y="138.672659" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="278.995556" y="138.672659" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="329.34" y="126.180894" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="379.684444" y="126.180894" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="430.028889" y="138.672659" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="480.373333" y="88.7056" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="530.717778" y="101.197365" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#m3bf279cacc" x="581.062222" y="88.7056" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <g id="patch_6">
+     <path d="M 494.965278 81.8806 
+L 566.470278 81.8806 
+Q 568.720278 81.8806 568.720278 79.6306 
+L 568.720278 57.7426 
+Q 568.720278 55.4926 566.470278 55.4926 
+L 494.965278 55.4926 
+Q 492.715278 55.4926 492.715278 57.7426 
+L 492.715278 79.6306 
+Q 492.715278 81.8806 494.965278 81.8806 
+z
+" style="fill: #fcfcfb; stroke: #eb6834; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 9px; font-family: 'AppleGothic'; fill: #2b2b2b" transform="translate(506.485278 65.7616)">최고 0.974</text>
+    <text style="font-size: 9px; font-family: 'AppleGothic'; fill: #2b2b2b" transform="translate(494.965278 76.7056)">벡터 80%·100%</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 12px; font-family: 'AppleGothic'; text-anchor: middle; fill: #1f1f1f" x="329.34" y="21.492" transform="rotate(-0 329.34 21.492)">영어 dev Recall@8 — 벡터 검색 비중별 (공식 평가셋 v1 · dev)</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_25">
+     <path d="M 65.58 46.461 
+L 74.58 46.461 
+L 83.58 46.461 
+" style="fill: none; stroke-dasharray: 7.5,6; stroke-dashoffset: 0; stroke: #6b6b6b; stroke-width: 1.5"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 9px; font-family: 'AppleGothic'; text-anchor: start" x="90.78" y="49.611" transform="rotate(-0 90.78 49.611)">BM25 단독 (공식 기준선) 0.880</text>
+    </g>
+    <g id="line2d_26">
+     <path d="M 65.58 61.905 
+L 74.58 61.905 
+L 83.58 61.905 
+" style="fill: none; stroke: #2a78d6; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#mfb6626843d" x="74.58" y="61.905" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     </g>
+    </g>
+    <g id="text_23">
+     <text style="font-size: 9px; font-family: 'AppleGothic'; text-anchor: start" x="90.78" y="65.055" transform="rotate(-0 90.78 65.055)">BAAI/bge-m3</text>
+    </g>
+    <g id="line2d_27">
+     <path d="M 65.58 77.349 
+L 74.58 77.349 
+L 83.58 77.349 
+" style="fill: none; stroke: #eb6834; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m3bf279cacc" x="74.58" y="77.349" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     </g>
+    </g>
+    <g id="text_24">
+     <text style="font-size: 9px; font-family: 'AppleGothic'; text-anchor: start" x="90.78" y="80.499" transform="rotate(-0 90.78 80.499)">intfloat/multilingual-e5-base</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_25">
+   <text style="font-size: 7.5px; font-family: 'AppleGothic'; fill: #6b6b6b" transform="translate(6.12 361.536)">점 = 실제 평가한 비중(0%, 10%, … 100%). 점 사이 선은 연결일 뿐 측정값이 아님. 후보 BM25 50 · 벡터 50, RRF k = 60, 상위 8개·참고문헌당 2개.</text>
+   <text style="font-size: 7.5px; font-family: 'AppleGothic'; fill: #6b6b6b" transform="translate(6.12 370.656)">0% 점이 기준선과 다르면: 후보 50개 안에서 참고문헌당 2개 제한으로 8개를 다 채우지 못한 문항 때문 (공식 BM25 단독은 51위 이하로 채움).</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p559102b21c">
+   <rect x="57.48" y="33.492" width="543.72" height="276.068"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "_note": "test 실행 전에 확정한 설정 (dev 결과로 선택, experiment_config.json 의 선택 기준 적용). test 결과를 본 뒤에는 바꾸지 않는다.",
+  "locked_at": "2026-10-29T05:47:22Z",
+  "model": "BAAI/bge-m3",
+  "model_key": "bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "fusion": "weighted RRF (wrrf-v1)",
+  "vector_weight": 0.7,
+  "bm25_weight": 0.3,
+  "bm25_k": 30,
+  "vector_k": 50,
+  "rrf_k": 60,
+  "final_k": 8,
+  "per_ref_cap": 2,
+  "dev_result": {"ko_recall8": 0.907, "ko_mrr": 0.734, "all_recall8": 0.935, "all_mrr": 0.786}
+}

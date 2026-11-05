@@ -1,0 +1,3 @@
+﻿qid,split,lang,question,answerable,gold_doc_ids,evidence_pages,note
+#ex1,dev,ko,(형식 예시 — 평가에서 제외됨) 질문 문장,Y,문헌ID1;문헌ID2,"문헌ID1:3,5;문헌ID2:12-13",정답 문헌 ID 는 data/prototype/documents.json 의 doc_id
+#ex2,test,en,(format example — ignored) question text,N,,,"답이 없는 질문은 answerable=N, 정답 칸은 비움"

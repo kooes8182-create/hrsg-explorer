@@ -1,0 +1,11 @@
+{
+ "config": {
+  "bm25_k": 50,
+  "vector_k": 50,
+  "rrf_k": 60,
+  "final_k": 8,
+  "per_doc": 2
+ },
+ "locked_from_run": "20261028_204923_dev.json",
+ "corpus_hash": "2ceaf95732de8189715a1b7b0dbb015969eae58965c9f5086cc60a16b2da8e24"
+}

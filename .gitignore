@@ -1,0 +1,42 @@
+# 비밀 정보 (실제 값은 .env 에만 두고 커밋하지 않음)
+.env
+.env.local
+.env.*.local
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Django
+staticfiles/
+media/
+
+# Frontend
+node_modules/
+dist/
+npm-debug.log*
+
+# 원문 참고 자료 (계획서·수업 자료·협업안·논문 PDF 는 Git 에 올리지 않음 — 하위 폴더 포함)
+*.pdf
+*.PDF
+reference/*.xlsx
+
+# 논문 RAG 프로토타입 생성물 (PDF 에서 추출한 본문·벡터. 명령으로 다시 만들 수 있음 — README 참고)
+data/prototype/corpus.jsonl
+data/prototype/index/
+data/prototype/notes/
+data/eval/runs/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# 공식 HRSG Explorer 검색 평가셋 v1 (논문 원문 발췌 포함 — 재배포 금지, README v1 규칙)
+hrsg_eval_set_v1/
+**/web-server/data/corpus.json
+# 임베딩 등 오래 걸리는 계산 캐시 (공식 corpus 파생 — 공개 저장소에 올리지 않음)
+.cache/

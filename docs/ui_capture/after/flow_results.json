@@ -1,0 +1,200 @@
+{
+ "results": [
+  {
+   "name": "첫 화면 제목 표시",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "주 행동 버튼(시뮬레이션 시작) 존재",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "주 행동 → 시뮬레이션 화면으로 이동",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "왼쪽 메뉴에 현재 위치 표시(aria-current)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "상단 위치 표시",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "조건 변경 시 \"변경됨\" 안내",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "조건 변경 시 이전 결과 가림 안내",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "분석 메뉴 → 첫 탭으로 이동",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "분석 탭 전환이 주소에 남음",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "분석 탭 활성 표시",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "화면 이동 후 저장 전 입력값 유지",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "원래 값으로 되돌리면 변경 표시 사라짐",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "실행 중 버튼 비활성(중복 실행 방지)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "실행 완료 후 \"현재 조건과 같습니다\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "결과 → 분석 이어가기",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "분석 상단 핵심 요약 표시",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "AI 도우미 → 논문 근거 질문 탭",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "검색 성능 실험 → 실험 기록",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "test 한국어 Recall@8 = 저장된 값 0.829",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "dev/test 표시",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "그래프 점 22개(모델 2 × 가중치 11)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "그래프 점 키보드 포커스 → 값 읽기",
+   "ok": true,
+   "detail": "BGE-M3 · 벡터 70% → 0.901"
+  },
+  {
+   "name": "검색 실험 화면에서는 케이스 선택 숨김",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "질문별 검색 비교 실행",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "뒤로 가기 후 검색 비교 결과 유지",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "/evaluate → /simulate",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "/overview → /home",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "/dev/search → /lab/compare (질문 유지)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "EN 전환 시 첫 화면 영어",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "Tab 첫 포커스 = 본문으로 건너뛰기",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "서버 연결 실패 안내 + 다시 시도",
+   "ok": true,
+   "detail": "■ 서버 연결 안 됨서버에 연결할 수 없습니다. 백엔드 서버가 켜져 있는지 확인한 뒤 다시 시도하세요.다시 시도"
+  },
+  {
+   "name": "작은 화면 가로 넘침 없음 /home",
+   "ok": true,
+   "detail": "{\"sw\":390,\"cw\":390}"
+  },
+  {
+   "name": "작은 화면 가로 넘침 없음 /simulate",
+   "ok": true,
+   "detail": "{\"sw\":390,\"cw\":390}"
+  },
+  {
+   "name": "작은 화면 가로 넘침 없음 /analysis/economics",
+   "ok": true,
+   "detail": "{\"sw\":390,\"cw\":390}"
+  },
+  {
+   "name": "작은 화면 가로 넘침 없음 /lab/records",
+   "ok": true,
+   "detail": "{\"sw\":390,\"cw\":390}"
+  },
+  {
+   "name": "작은 화면 가로 넘침 없음 /ask/papers",
+   "ok": true,
+   "detail": "{\"sw\":390,\"cw\":390}"
+  },
+  {
+   "name": "작은 화면 메뉴 열림",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "작은 화면 메뉴로 이동",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "콘솔 오류 없음",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "consoleErrors": []
+}

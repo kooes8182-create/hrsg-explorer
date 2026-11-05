@@ -1,0 +1,125 @@
+{
+ "eval_set": "v1",
+ "corpus_sha256": "84e3e62fb6085b7cd55afe563ebd97af9959c82bd75538446024fb9e7c140902",
+ "eval_questions_sha256": "7a4744dab9255454f7e8f4926327faa0a7eacf8851377016dc005ce3d7393d25",
+ "dev_copy_sha256": "ca4dc1d35a4ce351f11397bca1b7da27a1595da936b558220387d721112b9845",
+ "retrieve_js_sha256": "15e99be57cdb417e7694a6d832000b9896ca8972ef7897872fb6ab4bf975ddcf",
+ "official_scorer_sha256": "17870ca7ace266be8ceb7eaaa30fbbe2bc0739d3fc0e2c25535ca358f579490f",
+ "scorer_copy_sha256": "c91a371e8c4f1e2af89bdd95c72dbb4d380b016555e8467043a6cee1d471c003",
+ "lookup_retrieve_sha256": "e63e24adadba33b41b2af02395b8567a84be57ea0a7934e7b5504346f93735ef",
+ "fusion_version": "wrrf-v1",
+ "node": "v20.18.0",
+ "experiment_config": {
+  "_note": "결과를 보기 전(2026-10-29)에 고정한 실험 설정과 선택 기준. 결과를 본 뒤 바꾸지 않는다.",
+  "eval_set": "HRSG Explorer 검색 평가셋 v1",
+  "split": "dev (68문항, 답 있는 64). test 는 실행하지 않음",
+  "scoring": "hrsg_eval_set_v1/App/tools/eval_retrieval.mjs 의 지표(recall@8, hit@8, MRR, page@8)와 retrieve.js 의 cap(참고문헌당 2, k=8)을 그대로 사용",
+  "models": [
+   {
+    "id": "BAAI/bge-m3",
+    "query_prefix": "",
+    "passage_prefix": "",
+    "max_length": 8192,
+    "normalize": "L2 (sentence-transformers normalize_embeddings)"
+   },
+   {
+    "id": "intfloat/multilingual-e5-base",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "max_length": 512,
+    "normalize": "L2 (sentence-transformers normalize_embeddings)"
+   }
+  ],
+  "fusion": "가중 RRF: score = (1-alpha)/(k + rank_bm25) + alpha/(k + rank_vector). 순위 1부터, 후보에 없으면 그 항 0, 점수 0인 passage 제외. 동점: 점수 내림차순 → 두 순위 중 작은 값 오름차순 → 배열 인덱스 오름차순. 결합 후 cap 한 번 적용",
+  "stage1": {
+   "alpha": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+   ],
+   "bm25_k": 50,
+   "vector_k": 50,
+   "rrf_k": 60
+  },
+  "stage2": {
+   "alpha": "모델별 stage1 최적값",
+   "bm25_k": [
+    30,
+    50
+   ],
+   "vector_k": [
+    30,
+    50
+   ],
+   "rrf_k": [
+    20,
+    60
+   ]
+  },
+  "selection_criteria": [
+   "1. 한국어 dev recall@8 (높을수록)",
+   "2. 한국어 dev MRR (높을수록)",
+   "3. 영어 dev recall@8 (높을수록)",
+   "4. 같은 조건에서 측정한 질의당 검색 지연 (낮을수록)"
+  ],
+  "baseline": "공식 retrieve.js BM25 (KO_TERMS 포함) 의 한국어 dev 점수. 한국어 전체(0.574)를 대신 쓰지 않음"
+ },
+ "models": {
+  "bge-m3": {
+   "model": "BAAI/bge-m3",
+   "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+   "dim": 1024,
+   "max_length": 8192,
+   "query_prefix": "",
+   "passage_prefix": "",
+   "pooling": "Pooling({'embedding_dimension': 1024, 'pooling_mode': 'cls', 'include_prompt': True})",
+   "normalize": "L2 (normalize_embeddings=True)",
+   "device": "mps",
+   "dtype": "torch.float32",
+   "torch": "2.14.1",
+   "platform": "macOS-14.2.1-arm64-arm-64bit",
+   "corpus_embed_seconds": 370.3,
+   "model_load_seconds": 17.2,
+   "batch_size": 8,
+   "tokens": {
+    "max": 1264,
+    "median": 204,
+    "truncated_count": 0,
+    "truncated_ratio": 0.0
+   },
+   "corpus_sha256": "84e3e62fb6085b7cd55afe563ebd97af9959c82bd75538446024fb9e7c140902"
+  },
+  "e5-base": {
+   "model": "intfloat/multilingual-e5-base",
+   "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+   "dim": 768,
+   "max_length": 512,
+   "query_prefix": "query: ",
+   "passage_prefix": "passage: ",
+   "pooling": "Pooling({'embedding_dimension': 768, 'pooling_mode': 'mean', 'include_prompt': True})",
+   "normalize": "L2 (normalize_embeddings=True)",
+   "device": "mps",
+   "dtype": "torch.float32",
+   "torch": "2.14.1",
+   "platform": "macOS-14.2.1-arm64-arm-64bit",
+   "corpus_embed_seconds": 102.1,
+   "model_load_seconds": 7.8,
+   "batch_size": 8,
+   "tokens": {
+    "max": 1266,
+    "median": 206,
+    "truncated_count": 52,
+    "truncated_ratio": 0.028937117417918753
+   },
+   "corpus_sha256": "84e3e62fb6085b7cd55afe563ebd97af9959c82bd75538446024fb9e7c140902"
+  }
+ }
+}

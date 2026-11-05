@@ -1,0 +1,26 @@
+{
+ "checked_at": "2026-11-03T13:57:08+00:00",
+ "questions": 100,
+ "bm25_match": 100,
+ "hybrid_match": 100,
+ "top8_match": 100,
+ "config": {
+  "label": {
+   "ko": "확정 설정 (test 0.864 측정)",
+   "en": "Locked (test 0.864)"
+  },
+  "vector_weight": 0.7,
+  "bm25_k": 30,
+  "vector_k": 50,
+  "rrf_k": 60,
+  "final_k": 8,
+  "per_ref_cap": 2,
+  "validated": true
+ },
+ "device": "mps",
+ "platform": "macOS-14.2.1-arm64-arm-64bit",
+ "corpus_sha256": "84e3e62fb6085b7cd55afe563ebd97af9959c82bd75538446024fb9e7c140902",
+ "query_ms_median": 53.9,
+ "note": "순위 일치만 확인합니다. test 점수는 다시 계산하지 않으며, 저장된 공식 결과(0.864)를 그대로 표시합니다.",
+ "mismatches": []
+}

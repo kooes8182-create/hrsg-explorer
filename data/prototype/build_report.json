@@ -1,0 +1,465 @@
+{
+ "built_at": "2026-10-27T12:53:39+00:00",
+ "papers_dir": "/Users/kooeunseo/hr_system/HRSG/reference/papers",
+ "label": "개인 프로토타입 코퍼스 — 공식 협업 corpus.json 과 다른 자료",
+ "included": [
+  {
+   "file_name": "ARO2023_Koya.pdf",
+   "doc_id": "ARO2023_Koya",
+   "status": "open_license",
+   "chunks": 74,
+   "pages": 12,
+   "dropped_header_footer": 24,
+   "dropped_fragments": 70,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "AUT2016_thesis.pdf",
+   "doc_id": "AUT2016_thesis",
+   "status": "free_access",
+   "chunks": 432,
+   "pages": 117,
+   "dropped_header_footer": 106,
+   "dropped_fragments": 848,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "Almutairi-2015-Energies.pdf",
+   "doc_id": "Almutairi-2015-Energies",
+   "status": "open_license",
+   "chunks": 58,
+   "pages": 18,
+   "dropped_header_footer": 33,
+   "dropped_fragments": 182,
+   "split_long_blocks": 3
+  },
+  {
+   "file_name": "Alus2012_TSCI.pdf",
+   "doc_id": "Alus2012_TSCI",
+   "status": "free_access",
+   "chunks": 57,
+   "pages": 15,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 65,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "AoT2019_Almutairi.pdf",
+   "doc_id": "AoT2019_Almutairi",
+   "status": "free_access",
+   "chunks": 50,
+   "pages": 19,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 81,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "CET2013_034_007.pdf",
+   "doc_id": "CET2013_034_007",
+   "status": "free_access",
+   "chunks": 24,
+   "pages": 6,
+   "dropped_header_footer": 5,
+   "dropped_fragments": 5,
+   "split_long_blocks": 3
+  },
+  {
+   "file_name": "CFKO200433239311738.pdf",
+   "doc_id": "CFKO200433239311738",
+   "status": "free_access",
+   "chunks": 21,
+   "pages": 6,
+   "dropped_header_footer": 12,
+   "dropped_fragments": 124,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "CFKO200834939674101.pdf",
+   "doc_id": "CFKO200834939674101",
+   "status": "free_access",
+   "chunks": 13,
+   "pages": 6,
+   "dropped_header_footer": 6,
+   "dropped_fragments": 57,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "CFKO201133254120910.pdf",
+   "doc_id": "CFKO201133254120910",
+   "status": "free_access",
+   "chunks": 8,
+   "pages": 2,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 16,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "CFKO201133254120932.pdf",
+   "doc_id": "CFKO201133254120932",
+   "status": "free_access",
+   "chunks": 8,
+   "pages": 2,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 12,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "EBTF_D1.4.3_2011.pdf",
+   "doc_id": "EBTF_D1.4.3_2011",
+   "status": "free_access",
+   "chunks": 249,
+   "pages": 107,
+   "dropped_header_footer": 193,
+   "dropped_fragments": 734,
+   "split_long_blocks": 6
+  },
+  {
+   "file_name": "GE-GER-3574G.pdf",
+   "doc_id": "GE-GER-3574G",
+   "status": "free_access",
+   "chunks": 137,
+   "pages": 44,
+   "dropped_header_footer": 81,
+   "dropped_fragments": 165,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "IAPWS-IF97-Rev2007.pdf",
+   "doc_id": "IAPWS-IF97-Rev2007",
+   "status": "free_access",
+   "chunks": 173,
+   "pages": 49,
+   "dropped_header_footer": 48,
+   "dropped_fragments": 934,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "IAPWS-TGD3-10.pdf",
+   "doc_id": "IAPWS-TGD3-10",
+   "status": "free_access",
+   "chunks": 104,
+   "pages": 32,
+   "dropped_header_footer": 31,
+   "dropped_fragments": 101,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "IAPWS-TGD7-16.pdf",
+   "doc_id": "IAPWS-TGD7-16",
+   "status": "free_access",
+   "chunks": 79,
+   "pages": 26,
+   "dropped_header_footer": 25,
+   "dropped_fragments": 19,
+   "split_long_blocks": 10
+  },
+  {
+   "file_name": "IEAGHG_2012-08.pdf",
+   "doc_id": "IEAGHG_2012-08",
+   "status": "free_access",
+   "chunks": 787,
+   "pages": 294,
+   "dropped_header_footer": 455,
+   "dropped_fragments": 7464,
+   "split_long_blocks": 8
+  },
+  {
+   "file_name": "IJES2023_Hamitabat.pdf",
+   "doc_id": "IJES2023_Hamitabat",
+   "status": "free_access",
+   "chunks": 115,
+   "pages": 28,
+   "dropped_header_footer": 55,
+   "dropped_fragments": 155,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "Ibrahim2013_TSCI.pdf",
+   "doc_id": "Ibrahim2013_TSCI",
+   "status": "free_access",
+   "chunks": 42,
+   "pages": 13,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 93,
+   "split_long_blocks": 2
+  },
+  {
+   "file_name": "JAKO200910348030935.pdf",
+   "doc_id": "JAKO200910348030935",
+   "status": "free_access",
+   "chunks": 37,
+   "pages": 9,
+   "dropped_header_footer": 19,
+   "dropped_fragments": 102,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "JES2025_ShatAlBasra.pdf",
+   "doc_id": "JES2025_ShatAlBasra",
+   "status": "open_license",
+   "chunks": 46,
+   "pages": 13,
+   "dropped_header_footer": 26,
+   "dropped_fragments": 78,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "JPCS2017_891.pdf",
+   "doc_id": "JPCS2017_891",
+   "status": "open_license",
+   "chunks": 18,
+   "pages": 7,
+   "dropped_header_footer": 11,
+   "dropped_fragments": 5,
+   "split_long_blocks": 4
+  },
+  {
+   "file_name": "JPCS2019_pinch.pdf",
+   "doc_id": "JPCS2019_pinch",
+   "status": "open_license",
+   "chunks": 30,
+   "pages": 11,
+   "dropped_header_footer": 30,
+   "dropped_fragments": 7,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "JPCS2025_3028.pdf",
+   "doc_id": "JPCS2025_3028",
+   "status": "open_license",
+   "chunks": 119,
+   "pages": 32,
+   "dropped_header_footer": 93,
+   "dropped_fragments": 250,
+   "split_long_blocks": 3
+  },
+  {
+   "file_name": "Karimkashi2012_AFMC.pdf",
+   "doc_id": "Karimkashi2012_AFMC",
+   "status": "free_access",
+   "chunks": 30,
+   "pages": 4,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 42,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "Maghsoudi2017_TSCI.pdf",
+   "doc_id": "Maghsoudi2017_TSCI",
+   "status": "free_access",
+   "chunks": 55,
+   "pages": 14,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 323,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "Mohammd2015_TSCI.pdf",
+   "doc_id": "Mohammd2015_TSCI",
+   "status": "free_access",
+   "chunks": 61,
+   "pages": 15,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 88,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "NETL-Baseline-Vol1-2025.pdf",
+   "doc_id": "NETL-Baseline-Vol1-2025",
+   "status": "free_access",
+   "chunks": 816,
+   "pages": 240,
+   "dropped_header_footer": 462,
+   "dropped_fragments": 1640,
+   "split_long_blocks": 32
+  },
+  {
+   "file_name": "Ozcelik2020_MANAS.pdf",
+   "doc_id": "Ozcelik2020_MANAS",
+   "status": "free_access",
+   "chunks": 46,
+   "pages": 9,
+   "dropped_header_footer": 17,
+   "dropped_fragments": 78,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "PG_nCO2PP_2023.pdf",
+   "doc_id": "PG_nCO2PP_2023",
+   "status": "open_license",
+   "chunks": 106,
+   "pages": 16,
+   "dropped_header_footer": 46,
+   "dropped_fragments": 74,
+   "split_long_blocks": 2
+  },
+  {
+   "file_name": "dnb_1156187052.pdf",
+   "doc_id": "dnb_1156187052",
+   "status": "free_access",
+   "chunks": 502,
+   "pages": 156,
+   "dropped_header_footer": 133,
+   "dropped_fragments": 575,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "encit2008.pdf",
+   "doc_id": "encit2008",
+   "status": "free_access",
+   "chunks": 31,
+   "pages": 8,
+   "dropped_header_footer": 4,
+   "dropped_fragments": 131,
+   "split_long_blocks": 0
+  },
+  {
+   "file_name": "energies-08-01101.pdf",
+   "doc_id": "energies-08-01101",
+   "status": "open_license",
+   "chunks": 32,
+   "pages": 13,
+   "dropped_header_footer": 12,
+   "dropped_fragments": 94,
+   "split_long_blocks": 1
+  },
+  {
+   "file_name": "marner1983_nasa.pdf",
+   "doc_id": "marner1983_nasa",
+   "status": "free_access",
+   "chunks": 753,
+   "pages": 168,
+   "dropped_header_footer": 0,
+   "dropped_fragments": 861,
+   "split_long_blocks": 0
+  }
+ ],
+ "excluded": [
+  {
+   "file_name": "Ansaldo_HRSG.pdf",
+   "status": "unknown",
+   "reason": "사용 가능 여부 확인 불가",
+   "basis": "발행처·연도·배포 조건 정보 없음 (참고문헌 목록에도 n.d., URL 없음)"
+  },
+  {
+   "file_name": "Dooley-Lister-FAC-2018.pdf",
+   "status": "paywalled",
+   "reason": "유료 원문 — 협업안에 따라 원문 제외, 페이지별 요약 노트 미제공",
+   "basis": "PDF 1쪽: '© 2018 by Waesseri GmbH. All rights reserved.' — 구독 학술지(PowerPlant Chemistry). 요약 노트 미제공"
+  },
+  {
+   "file_name": "Gartia-2007-IJTS-natural-circulation-parallel-channels.pdf",
+   "status": "paywalled",
+   "reason": "유료 원문 — 협업안에 따라 원문 제외, 페이지별 요약 노트 미제공",
+   "basis": "PDF 내 '© Elsevier ... All rights reserved' — 구독 학술지(Int. J. Thermal Sciences). 요약 노트 미제공"
+  },
+  {
+   "file_name": "JAKO200819463917983.pdf",
+   "status": "free_access",
+   "reason": "텍스트를 추출할 수 없음 (이미지만 있는 PDF, 7쪽 모두). OCR 하지 않음"
+  },
+  {
+   "file_name": "Kim2002_KSMEB.pdf",
+   "status": "free_access",
+   "reason": "텍스트를 추출할 수 없음 (이미지만 있는 PDF, 8쪽 모두). OCR 하지 않음"
+  },
+  {
+   "file_name": "Shin2003_KSME.pdf",
+   "status": "paywalled",
+   "reason": "유료 원문 — 협업안에 따라 원문 제외, 페이지별 요약 노트 미제공",
+   "basis": "KSME International Journal(Springer) 구독 학술지로 판단. PDF 내 공개 라이선스 문구 없음. 요약 노트 미제공"
+  },
+  {
+   "file_name": "najjar2020_seta.pdf",
+   "status": "paywalled",
+   "reason": "유료 원문 — 협업안에 따라 원문 제외, 페이지별 요약 노트 미제공",
+   "basis": "PDF 내 '© Elsevier ... All rights reserved' — 구독 학술지(SETA). 요약 노트 미제공"
+  },
+  {
+   "file_name": "rlfd_202407179.pdf",
+   "status": "unknown",
+   "reason": "사용 가능 여부 확인 불가",
+   "basis": "원문이 아닌 한국어 번역 요약 1쪽(작성자 메타데이터 있음). 원문 페이지 번호가 없어 근거 페이지를 추적할 수 없음"
+  }
+ ],
+ "duplicates": [
+  {
+   "file_name": "admin,+ARO_11098_20230221_V2.pdf",
+   "same_as": "ARO2023_Koya.pdf"
+  }
+ ],
+ "missing_files": [
+  "ORNL_TM_2022_2381.pdf"
+ ],
+ "not_in_bibliography": [],
+ "empty_pages": {
+  "EBTF_D1.4.3_2011.pdf": [
+   2,
+   4,
+   6,
+   10
+  ],
+  "GE-GER-3574G.pdf": [
+   2,
+   44
+  ],
+  "IEAGHG_2012-08.pdf": [
+   14,
+   15,
+   17,
+   19,
+   42,
+   61,
+   173,
+   174,
+   190,
+   220,
+   222,
+   293
+  ],
+  "JAKO200819463917983.pdf": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "Kim2002_KSMEB.pdf": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "dnb_1156187052.pdf": [
+   2,
+   4
+  ]
+ },
+ "image_only_documents": [
+  "JAKO200819463917983.pdf",
+  "Kim2002_KSMEB.pdf"
+ ],
+ "empty_chunks": 0,
+ "duplicate_chunk_ids": [],
+ "identical_text_chunks": 34,
+ "totals": {
+  "pdf_files": 42,
+  "documents_included": 33,
+  "chunks": 5113,
+  "chunks_by_lang": {
+   "en": 5037,
+   "ko": 76
+  },
+  "chunks_by_source": {
+   "pdf_text": 5113
+  },
+  "excluded": 8,
+  "duplicates": 1
+ }
+}

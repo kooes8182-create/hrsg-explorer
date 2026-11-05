@@ -1,0 +1,30 @@
+{
+ "locked_config": {
+  "_note": "test 실행 전에 확정한 설정 (dev 결과로 선택, experiment_config.json 의 선택 기준 적용). test 결과를 본 뒤에는 바꾸지 않는다.",
+  "locked_at": "2026-10-29T05:47:22Z",
+  "model": "BAAI/bge-m3",
+  "model_key": "bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "fusion": "weighted RRF (wrrf-v1)",
+  "vector_weight": 0.7,
+  "bm25_weight": 0.3,
+  "bm25_k": 30,
+  "vector_k": 50,
+  "rrf_k": 60,
+  "final_k": 8,
+  "per_ref_cap": 2,
+  "dev_result": {
+   "ko_recall8": 0.907,
+   "ko_mrr": 0.734,
+   "all_recall8": 0.935,
+   "all_mrr": 0.786
+  }
+ },
+ "eval_sha256": "7a4744dab9255454f7e8f4926327faa0a7eacf8851377016dc005ce3d7393d25",
+ "corpus_sha256": "84e3e62fb6085b7cd55afe563ebd97af9959c82bd75538446024fb9e7c140902",
+ "retrieve_js_sha256": "15e99be57cdb417e7694a6d832000b9896ca8972ef7897872fb6ab4bf975ddcf",
+ "scorer_sha256": "17870ca7ace266be8ceb7eaaa30fbbe2bc0739d3fc0e2c25535ca358f579490f",
+ "device": "mps",
+ "dev_part_matches_dev_experiment": true,
+ "query_ms_median_embed_plus_vector": 56.43141648033634
+}

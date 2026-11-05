@@ -1,0 +1,70 @@
+{
+  "_note": "두 팀 공통 계산기 임시(DEMO) 데이터. 실제 설비·가격이 아니다. 압력은 mbar 로 저장하고, 입력은 키 이름 끝의 단위(_mbar, _mmh2o, _kpa, _inh2o)로 받는다.",
+  "engine": "common-0.2",
+  "gt_classes": [
+    {
+      "id": "F", "name": "F-Class GT (Mock)", "rated_gt_mw": 270, "rated_st_mw": 135, "hp_steam_tph": 270,
+      "indicators": {
+        "gt_bp_mbar":   { "label": "GT 배압",   "design": 30, "caution": 35,   "danger": 41,   "min": 20, "max": 50 },
+        "hrsg_dp_mbar": { "label": "HRSG 차압", "design": 25, "caution": 27.5, "danger": 32.5, "min": 15, "max": 40 },
+        "stack_c":      { "label": "스택 온도", "design": 90, "caution": 97.5, "danger": 106,  "min": 75, "max": 120 }
+      },
+      "operation": { "load_pct": 100, "gt_exhaust_c": 600, "exhaust_flow_kgs": 650, "ambient_c": 15 }
+    },
+    {
+      "id": "H", "name": "H-Class GT (Mock)", "rated_gt_mw": 400, "rated_st_mw": 200, "hp_steam_tph": 400,
+      "indicators": {
+        "gt_bp_mbar":   { "label": "GT 배압",   "design": 32, "caution": 37, "danger": 43,  "min": 22, "max": 52 },
+        "hrsg_dp_mbar": { "label": "HRSG 차압", "design": 27, "caution": 30, "danger": 35,  "min": 17, "max": 42 },
+        "stack_c":      { "label": "스택 온도", "design": 85, "caution": 92, "danger": 100, "min": 70, "max": 115 }
+      },
+      "operation": { "load_pct": 100, "gt_exhaust_c": 640, "exhaust_flow_kgs": 900, "ambient_c": 15 }
+    },
+    {
+      "id": "E", "name": "E-Class GT (Mock)", "rated_gt_mw": 170, "rated_st_mw": 85, "hp_steam_tph": 170,
+      "indicators": {
+        "gt_bp_mbar":   { "label": "GT 배압",   "design": 28,  "caution": 33,   "danger": 39,  "min": 18, "max": 48 },
+        "hrsg_dp_mbar": { "label": "HRSG 차압", "design": 22,  "caution": 24.5, "danger": 29,  "min": 12, "max": 37 },
+        "stack_c":      { "label": "스택 온도", "design": 100, "caution": 108,  "danger": 116, "min": 85, "max": 130 }
+      },
+      "operation": { "load_pct": 100, "gt_exhaust_c": 545, "exhaust_flow_kgs": 450, "ambient_c": 15 }
+    }
+  ],
+  "default_case": {
+    "_comment": "「기본값」이 불러오는 예시 운전 상태: F-Class, HRSG 차압·스택 온도가 설계보다 높음. 설계 상태(손실 0)는 designInputs() 로 만든다.",
+    "gt_class": "F",
+    "gt_bp_mbar": 30,
+    "hrsg_dp_mbar": 30,
+    "stack_c": 95
+  },
+  "economics": {
+    "price_krw_per_kwh": 150,
+    "monthly_hours": 720,
+    "annual_hours": 8000,
+    "target_recovery_mw": 1.0
+  },
+  "methods": [
+    { "id": "mechanical", "name": "기계식 세정",       "cost_krw": 150000000, "outage_days": 6,  "indirect_krw": 0, "recovery_ratio": 0.45, "recovery_mw": null },
+    { "id": "water",      "name": "고압수 세정",       "cost_krw": 200000000, "outage_days": 7,  "indirect_krw": 0, "recovery_ratio": 0.60, "recovery_mw": null },
+    { "id": "dryice",     "name": "드라이아이스 세정", "cost_krw": 300000000, "outage_days": 5,  "indirect_krw": 0, "recovery_ratio": 0.70, "recovery_mw": null },
+    { "id": "chemical",   "name": "화학 세정",         "cost_krw": 450000000, "outage_days": 10, "indirect_krw": 0, "recovery_ratio": 0.85, "recovery_mw": null }
+  ],
+  "pinch": {
+    "_comment": "HP 만 운전 데이터가 있고 IP·LP 는 없음(null → 「데이터 필요」). HP 온도는 드럼 압력에서 설계 핀치·어프로치가 나오도록 채운다.",
+    "design": { "HP": { "pinch_c": 8, "approach_c": 5 }, "IP": { "pinch_c": 8, "approach_c": 5 }, "LP": { "pinch_c": 8, "approach_c": 5 } },
+    "default_drum_barg": { "HP": 125, "IP": 25, "LP": 5 },
+    "default_data_sections": ["HP"]
+  },
+  "constants": {
+    "_comment": "화면에 입력란이 없는 계산 상수(DEMO 임시값)",
+    "gt_loss_pct_per_mbar": 0.08,
+    "st_loss_pct_per_c": 0.12,
+    "outage_margin_ratio": 0.02,
+    "default_method": "mechanical",
+    "index_weights": { "hrsg_dp_mbar": 0.5, "gt_bp_mbar": 0.25, "stack_c": 0.25 },
+    "section_weights": { "superheater": 0.8, "evaporator": 1.0, "economizer": 1.2 },
+    "public_ref_inh2o": [3, 4],
+    "pinch_margin_c": 3,
+    "efficiency_drop_pp": { "caution": 1.0, "danger": 2.0 }
+  }
+}

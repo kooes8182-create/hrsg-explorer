@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  디자인 토큰 (RGB 값) — Premium SaaS 팔레트
+  Primary: Deep Navy #020617 · Dark Slate #111827 · Orange #EA580C · Soft Orange #FB923C · Pale Yellow #FEF9C3
+  Secondary: Cream #FFF7ED · Peach #FED7AA · Background #F8FAFC · Border #E2E8F0 · White
+  비율: 흰색·밝은 회색 75~80% / 네이비·슬레이트 10~15% / 오렌지·피치 5~10%.
+  상태 색(정상·주의·위험·미확인)은 브랜드 오렌지와 따로 둡니다 — 오렌지는 '위험'을 뜻하지 않습니다 (ISA-101: 정상은 중립색).
+  다크 모드는 반전이 아니라 따로 고른 값입니다 (배경 Deep Navy, 카드 Dark Slate).
+*/
+:root {
+  --canvas: 248 250 252;      /* #F8FAFC */
+  --surface: 255 255 255;
+  --sunken: 241 245 249;      /* 입력칸·보조 영역 */
+  --line: 226 232 240;        /* #E2E8F0 */
+  --ink: 2 6 23;              /* Deep Navy — 제목·핵심 수치 */
+  --slate: 17 24 39;          /* Dark Slate — 본문 */
+  --muted: 71 85 105;
+  --faint: 100 116 139;
+  --accent: 234 88 12;        /* Primary Orange — CTA·선택·주요 그래프 */
+  --accent-ink: 194 65 12;
+  --accent-soft: 255 247 237; /* Cream — 선택 배경 */
+  --soft: 251 146 60;         /* Soft Orange — 보조 시각화 */
+  --peach: 254 215 170;       /* Peach — 그라데이션·게이지 배경 */
+  --pale: 254 249 195;        /* Pale Yellow — 안내 카드 */
+  --caution: 161 98 7;        /* Amber (주의) */
+  --caution-soft: 254 243 199;
+  --danger: 220 38 38;        /* Red (위험) */
+  --danger-soft: 254 226 226;
+  --info: 29 78 216;
+  --info-soft: 239 246 255;
+  --good: 21 128 61;
+  --good-soft: 220 252 231;
+  --side: 255 255 255;
+  --side-ink: 17 24 39;
+  --side-muted: 100 116 139;
+  --side-hover: 248 250 252;
+  /* 차트 계열색: 오렌지 · 블루 · 틸 · 로즈 (dataviz 검증 통과, 4색 전체 쌍 — 색각 이상 ΔE ≥ 13.5, 정상 시각 ≥ 22.2) */
+  --series-1: 234 88 12;
+  --series-2: 29 78 216;
+  --series-3: 13 148 136;
+  --series-4: 157 23 77;
+  --grid: 238 242 246;
+  --shadow: 15 23 42;
+  color-scheme: light;
+}
+
+.dark {
+  --canvas: 2 6 23;           /* Deep Navy */
+  --surface: 17 24 39;        /* Dark Slate */
+  --sunken: 11 18 32;
+  --line: 31 41 55;
+  --ink: 241 245 249;
+  --slate: 226 232 240;
+  --muted: 160 174 192;
+  --faint: 125 139 161;
+  --accent: 249 115 22;
+  --accent-ink: 253 186 116;
+  --accent-soft: 42 22 8;
+  --soft: 251 146 60;
+  --peach: 124 45 18;
+  --pale: 58 52 16;
+  --caution: 251 191 36;
+  --caution-soft: 58 42 6;
+  --danger: 248 113 113;
+  --danger-soft: 59 18 18;
+  --info: 96 165 250;
+  --info-soft: 15 30 58;
+  --good: 74 222 128;
+  --good-soft: 14 42 26;
+  --side: 11 18 32;
+  --side-ink: 226 232 240;
+  --side-muted: 125 139 161;
+  --side-hover: 17 24 39;
+  --series-1: 234 88 12;
+  --series-2: 59 130 246;
+  --series-3: 13 148 136;
+  --series-4: 192 38 94; /* 어두운 화면: 색각 이상 ΔE 7.0 (주의 구간) — 공법 이름을 막대·범례에 직접 표시해 색만으로 구분하지 않음 */
+  --grid: 30 41 59;
+  --shadow: 0 0 0;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-canvas text-slate font-sans antialiased;
+  font-feature-settings: 'tnum' 1;
+  font-size: 14px;
+  /* 한국어 줄바꿈을 단어 단위로 (긴 영문·숫자는 넘치지 않게 끊음) */
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* 키보드 사용자를 위한 포커스 표시 */
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 2px;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-card transition-shadow;
+  }
+  .card-hover {
+    @apply hover:border-[rgb(var(--peach))] hover:shadow-lift;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-3.5 py-2 text-[13px] font-semibold transition-all duration-150 active:scale-[.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:active:scale-100;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-white shadow-[0_1px_2px_rgb(234_88_12/.25)] hover:bg-accent-ink;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-surface text-slate hover:border-[rgb(var(--peach))] hover:bg-accent-soft;
+  }
+  .btn-danger {
+    @apply btn bg-danger text-white hover:opacity-90;
+  }
+  .btn-icon {
+    @apply inline-flex h-9 w-9 items-center justify-center rounded-lg text-muted transition-colors hover:bg-accent-soft hover:text-accent-ink;
+  }
+  .input {
+    @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink placeholder:text-faint transition-shadow focus:border-accent focus:outline-none focus:ring-4 focus:ring-[rgb(var(--accent)/.12)];
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-semibold text-muted;
+  }
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.1em] text-faint;
+  }
+  .kpi-number {
+    @apply text-[30px] font-bold leading-none tracking-tight text-ink tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* 인쇄(PDF 보고서): A4, 흰 배경 */
+@page {
+  size: A4;
+  margin: 14mm;
+}
+@media print {
+  body {
+    background: white;
+  }
+}
+
+/* 발표 모드: DEMO 배지 숨김 (lib/presentation.ts) */
+.present [data-demo] { display: none !important; }

@@ -1,0 +1,15 @@
+# Render 무료 플랜 배포용 패키지 목록 (2026-11-05)
+# requirements.txt 에서 AI 검색 임베딩용 패키지(torch, sentence-transformers, transformers, tokenizers,
+# safetensors, huggingface_hub)를 뺐습니다. 무료 서버 메모리(512MB)로는 BGE-M3 를 돌릴 수 없고,
+# 공식 평가셋 원문·임베딩은 재배포 금지라 저장소에 없습니다 → 배포판에서 AI 근거 검색은 '사용 불가'로 표시됩니다.
+# gunicorn 은 Render 에서 Django 를 실행하는 서버 프로그램입니다 (로컬에는 설치하지 않음).
+Django==6.1.2
+django-cors-headers==4.9.0
+djangorestframework==3.18.3
+anthropic==2.5.0
+numpy==2.5.4
+openpyxl==3.1.5
+psycopg2-binary==2.9.13
+pymupdf==2.0
+python-dotenv==1.2.4
+gunicorn==23.0.0

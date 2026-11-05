@@ -1,0 +1,19 @@
+# 비밀값·로컬 환경·빌드 결과
+backend/.env
+backend/.venv/
+**/__pycache__/
+frontend/node_modules/
+frontend/dist/
+.DS_Store
+
+# 검색 실험 임시 파일
+data/rag/dev_runs/*.tmp.json
+
+# 업로드한 원본 PDF (앱에서 내려받기 불가, Git 제외)
+data/kb/
+
+# 체크리스트 현장 사진 (모바일 업로드, Git 제외)
+data/checklist_photos/
+
+# 데모 계정 비밀번호를 잠깐 적어 두는 파일 (확인 후 삭제, Git 제외)
+backend/.demo_credentials*

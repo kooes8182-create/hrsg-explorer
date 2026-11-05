@@ -1,0 +1,49 @@
+{
+ "config": "locked",
+ "settings": {
+  "label": {
+   "ko": "확정 설정 (test 0.864 측정)",
+   "en": "Locked (test 0.864)"
+  },
+  "vector_weight": 0.7,
+  "bm25_k": 30,
+  "vector_k": 50,
+  "rrf_k": 60,
+  "final_k": 8,
+  "per_ref_cap": 2,
+  "validated": true
+ },
+ "split": "dev",
+ "summary": {
+  "all": {
+   "n": 64,
+   "recall": 0.9354166666666667,
+   "hit": 0.984375,
+   "mrr": 0.7857142857142859,
+   "page": 0.84
+  },
+  "en": {
+   "n": 32,
+   "recall": 0.9635416666666667,
+   "hit": 1,
+   "mrr": 0.8377976190476191,
+   "page": 0.84
+  },
+  "ko": {
+   "n": 32,
+   "recall": 0.9072916666666667,
+   "hit": 0.96875,
+   "mrr": 0.7336309523809524,
+   "page": 0.84
+  },
+  "dev": {
+   "n": 64,
+   "recall": 0.9354166666666667,
+   "hit": 0.984375,
+   "mrr": 0.7857142857142859,
+   "page": 0.84
+  }
+ },
+ "ran_at": "2026-11-03T14:30:36+00:00",
+ "scorer": "eval_retrieval_dev.mjs (공식 채점 복사본) + lookup_retrieve.js"
+}
