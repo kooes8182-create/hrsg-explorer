@@ -20,7 +20,7 @@ Docker 는 쓰지 않습니다 (로컬 직접 실행 — 사용자 결정 2026-1
 **Render 배포 (2026-11-05 사용자 승인)**: 비공개 GitHub 저장소(루트 = `HRSG/`) + Render 무료 플랜(웹 서비스 1 + PostgreSQL 1, `HRSG/render.yaml`).
 Django 가 API 와 React 빌드 결과를 같은 주소로 제공하고, 배포판은 휴대폰 화면을 켭니다(`VITE_MOBILE_UI=1`).
 배포용 설정은 `RENDER_EXTERNAL_HOSTNAME`·`DATABASE_URL` 이 있을 때만 켜지므로 로컬 실행은 그대로입니다.
-배포판에서 AI 근거 검색은 '사용 불가'(무료 512MB 로 BGE-M3 불가, 평가셋 원문 재배포 금지). 절차: [docs/07_render_deploy.md](docs/07_render_deploy.md)
+배포판 AI 근거 검색: 2026-11-07 사용자 승인으로 corpus.json 을 Render Secret Files 로 올려 **BM25 단독(축소판)** 으로 사용 (무료 512MB 로 BGE-M3 불가 → 최종 모델과 다름). GitHub 에는 계속 올리지 않음. 절차: [docs/07_render_deploy.md](docs/07_render_deploy.md)
 
 **모바일 웹 (2026-11-04 사용자 승인)**: 휴대폰 접속용 서버 `npm run dev:mobile`(`vite.mobile.config.ts`, 포트 **5175**, `0.0.0.0` 바인딩 + 사설망 주소만 허용)에 한해 '이 컴퓨터 전용' 규칙을 완화합니다.
 PC 웹(5174 localhost)·백엔드(8002 127.0.0.1)·`vite.config.ts` 는 바꾸지 않습니다. 모바일 화면은 5175 로 열고 폭 ≤ 767px 일 때만 켜집니다. 상세: [docs/05_mobile.md](docs/05_mobile.md)

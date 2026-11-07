@@ -90,7 +90,7 @@ push 하면 Render 가 자동으로 다시 배포합니다 (약 5분).
 | 잠자기 | 15분 동안 접속이 없으면 서버가 멈추고, 다음 첫 접속 때 약 1분 기다림 | 발표 직전 한 번 미리 열어 두기 |
 | DB 만료 | 무료 PostgreSQL 은 **만든 날부터 30일 뒤 만료**, 14일 안에 유료 전환하지 않으면 삭제 | 만료 후 DB 를 새로 만들고 다시 배포 (데모 케이스·계정은 시작 때 자동 생성) |
 | 파일 저장 | 업로드한 PDF·현장 사진은 서버 재시작·재배포 때 사라짐 (무료는 디스크 유지 불가) | 시연용으로만 사용 |
-| AI 근거 검색 | 배포판에서는 '사용 불가' 표시 (512MB 로 BGE-M3 불가, 평가셋 원문 재배포 금지) | 로컬(8002)에서 시연 |
+| AI 근거 검색 | 512MB 로 BGE-M3 불가 → corpus 를 Secret File 로 올리면 **BM25 단독(축소판)** 으로 동작 (§8) | 최종 모델(BGE-M3 혼합) 시연은 로컬(8002) |
 | Shell 없음 | 무료는 서버 터미널을 쓸 수 없음 | DB 준비·데모 데이터·계정은 `startCommand` 에서 자동 처리 |
 
 ## 7. 배포 전 로컬 검증 (2026-11-05)
@@ -99,3 +99,17 @@ push 하면 Render 가 자동으로 다시 배포합니다 (약 5분).
 - `VITE_MOBILE_UI=1 npm run build` 성공
 - 배포 모드 흉내(8003, `RENDER_EXTERNAL_HOSTNAME=localhost`, `DATABASE_URL`, corpus 없음): `/`, `/checklist`, `/calculator`, `/assets/*.js`, `/api/health/` 모두 200, 검색 상태 `unavailable`
 - **미실행**: 실제 Render 배포, HTTPS 에서의 로그인(보안 쿠키는 HTTPS 에서만 동작해 로컬 http 로는 확인 불가), torch 를 뺀 환경에서의 실행
+
+## 8. 배포판 AI 채팅 켜기 (2026-11-07 사용자 승인)
+
+corpus.json 은 GitHub 에 올리지 않고 **Render Secret Files** 로만 서버에 둡니다. 코드 수정 없이 환경 변수로 경로만 바꿉니다.
+
+1. Render 서비스 `hrsg-explorer` → **Environment**
+2. **Secret Files → Add Secret File**: 파일 이름 `corpus.json`, 내용 = `hrsg_eval_set_v1/App/web-server/data/corpus.json` 전체 (서버에서는 `/etc/secrets/corpus.json` 이 됨)
+3. **Environment Variables** 에 추가
+   - `RAG_OFFICIAL_CORPUS` = `/etc/secrets/corpus.json`
+   - `ANTHROPIC_API_KEY` = 내 키 (직접 입력, 채팅·파일에 붙여 넣지 않기)
+4. **Save, rebuild, and deploy** → Live 가 되면 `/api/health/` 에서 search `ready`, vector `unavailable`(BM25 대체) 확인
+5. AI 관리자 계정(90020833)으로 로그인 → **설정 → 외부 AI 전송 허용** 켜기 (DB 기본값은 꺼짐. 무료 DB 를 새로 만들면 다시 켜야 함)
+
+주의: 배포판 검색은 BM25 단독이라 최종 모델(BGE-M3 70% + BM25 30%, test Recall@8 0.864)과 결과가 다릅니다. 발표에서 최종 모델 성능을 보여 줄 때는 로컬 결과를 씁니다.
