@@ -110,6 +110,6 @@ corpus.json 은 GitHub 에 올리지 않고 **Render Secret Files** 로만 서�
    - `RAG_OFFICIAL_CORPUS` = `/etc/secrets/corpus.json`
    - `ANTHROPIC_API_KEY` = 내 키 (직접 입력, 채팅·파일에 붙여 넣지 않기)
 4. **Save, rebuild, and deploy** → Live 가 되면 `/api/health/` 에서 search `ready`, vector `unavailable`(BM25 대체) 확인
-5. AI 관리자 계정(90020833)으로 로그인 → **설정 → 외부 AI 전송 허용** 켜기 (DB 기본값은 꺼짐. 무료 DB 를 새로 만들면 다시 켜야 함)
+5. 같은 Environment 에 `AI_EXTERNAL` = `on` 추가 → 서버 시작 때 '외부 AI 전송 허용'을 켭니다 (설정 화면의 스위치는 권한표에서 막혀 있고 무료 플랜은 Shell 이 없어서 이 방법을 씀. 끄려면 값을 지우거나 `off`)
 
 주의: 배포판 검색은 BM25 단독이라 최종 모델(BGE-M3 70% + BM25 30%, test Recall@8 0.864)과 결과가 다릅니다. 발표에서 최종 모델 성능을 보여 줄 때는 로컬 결과를 씁니다.

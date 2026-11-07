@@ -13,11 +13,13 @@ services:
       pip install -r explorer/backend/requirements-render.txt &&
       cd explorer/frontend && npm ci && VITE_MOBILE_UI=1 npm run build
     # 무료 플랜은 Shell 이 없어서, 서버 시작 때 DB 준비·데모 케이스·데모 계정을 함께 처리합니다 (여러 번 실행해도 중복 없음)
+    # 외부 AI(Claude) 전송 허용은 화면에서 막혀 있어(권한표), 환경 변수 AI_EXTERNAL=on 일 때만 켭니다. 그 밖의 값·없음 = 끔
     startCommand: >-
       cd explorer/backend &&
       python manage.py migrate --noinput &&
       python manage.py seed_demo_cases &&
       python manage.py create_demo_accounts --from-env &&
+      python manage.py ai_settings --external "$( [ "$AI_EXTERNAL" = on ] && echo on || echo off )" &&
       gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 1 --timeout 120
     healthCheckPath: /api/health/
     envVars:
