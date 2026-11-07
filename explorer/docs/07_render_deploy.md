@@ -113,3 +113,15 @@ corpus.json 은 GitHub 에 올리지 않고 **Render Secret Files** 로만 서�
 5. 같은 Environment 에 `AI_EXTERNAL` = `on` 추가 → 서버 시작 때 '외부 AI 전송 허용'을 켭니다 (설정 화면의 스위치는 권한표에서 막혀 있고 무료 플랜은 Shell 이 없어서 이 방법을 씀. 끄려면 값을 지우거나 `off`)
 
 주의: 배포판 검색은 BM25 단독이라 최종 모델(BGE-M3 70% + BM25 30%, test Recall@8 0.864)과 결과가 다릅니다. 발표에서 최종 모델 성능을 보여 줄 때는 로컬 결과를 씁니다.
+
+### 8-1. Secret File 저장 오류가 날 때 (2026-11-07)
+
+원본(1.5MB)은 Render 에서 "An error occurred while updating these secret files" 로 저장되지 않았습니다. 압축본을 씁니다.
+
+```bash
+gzip -9c hrsg_eval_set_v1/App/web-server/data/corpus.json | base64 > corpus.json.gz.b64   # 약 0.55MB
+```
+
+- Secret File 이름 `corpus.json.gz.b64`, 환경 변수 `RAG_OFFICIAL_CORPUS=/etc/secrets/corpus.json.gz.b64`
+- 그래도 크면 `split -b 200000` 으로 나눠 `corpus.json.gz.b64.part1`, `.part2`, `.part3` 로 올립니다 (환경 변수는 그대로). 서버가 순서대로 이어 붙인 뒤 해독·압축 해제합니다 (`rag/official.py` `_corpus_bytes`).
+- 해독 결과는 원본과 SHA-256 이 같음을 로컬에서 확인했습니다. 만든 파일은 저장소에 넣지 않습니다.

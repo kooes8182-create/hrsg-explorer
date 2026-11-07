@@ -152,15 +152,39 @@ def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _corpus_bytes(path):
+    """corpus 원본 바이트. 배포판(Render Secret Files 크기 제한)용으로 두 가지를 더 받습니다.
+    - 파일이 없으면 path.part1, path.part2 … 를 순서대로 이어 붙임
+    - 이름이 .b64 로 끝나면 base64 해독, 결과가 gzip 이면 압축 해제
+    로컬 기본 경로(corpus.json 원본)는 그대로 읽으므로 해시·검증 결과가 같습니다."""
+    if path.exists():
+        raw = path.read_bytes()
+    else:
+        parts = []
+        while (p := path.with_name(f"{path.name}.part{len(parts) + 1}")).exists():
+            parts.append(p.read_bytes())
+        if not parts:
+            raise FileNotFoundError(path)
+        raw = b"".join(parts)
+    if path.name.endswith(".b64"):
+        import base64
+        raw = base64.b64decode(b"".join(raw.split()))
+    if raw[:2] == b"\x1f\x8b":
+        import gzip
+        raw = gzip.decompress(raw)
+    return raw
+
+
 def _load_base():
     if _state["corpus"] is not None or _state["error"]:
         return
     try:
-        corpus = json.loads(CORPUS.read_text(encoding="utf-8"))
+        raw = _corpus_bytes(CORPUS)
     except FileNotFoundError:
         _state["error"] = f"공식 corpus 파일이 없습니다: {CORPUS}"
         return
-    _state["corpus"], _state["corpus_sha"] = corpus, sha256(CORPUS)
+    corpus = json.loads(raw.decode("utf-8"))
+    _state["corpus"], _state["corpus_sha"] = corpus, hashlib.sha256(raw).hexdigest()
     _state["bm25"] = BM25(corpus["passages"])
     # 벡터 파일이 corpus 와 맞는지 (해시·행 대조) 먼저 확인 — 모델은 첫 질의 때
     try:
